@@ -614,18 +614,24 @@
   <!-- TOP BAR -->
   <div class="topbar">
     <div class="lhs">
-      <div class="doc-tag">cmdAI — note technique</div>
-      <div class="doc-id">DOC · ACCES-CONNECTÉ · R1</div>
+      <div class="doc-tag">cmdAI · CoproResa — note technique</div>
+      <div class="doc-id">DOC · ACCES-CONNECTÉ · R2</div>
     </div>
     <div class="doc-meta">
-      <div><b>destinataire</b> &nbsp; client / électricien CFA</div>
-      <div><b>objet</b> &nbsp; contrôle d'accès &amp; réseau</div>
-      <div><b>date</b> &nbsp; mai 2026</div>
+      <div><b>destinataire</b> &nbsp; CS Harmony / promoteur / électricien CFA</div>
+      <div><b>objet</b> &nbsp; contrôle d'accès &amp; réseau — mise en conformité</div>
+      <div><b>date</b> &nbsp; juillet 2026 — révision R2</div>
     </div>
   </div>
 
   <h1 class="title">Contrôle d'accès <em>connecté</em><br/>aux espaces communs.</h1>
-  <p class="sub">Synthèse des choix matériels et réseau à faire pour rendre vos portes pilotables à distance — résumé du mail technique, lisible en cinq minutes.</p>
+  <p class="sub">Synthèse des choix matériels et réseau pour rendre les portes pilotables à distance via <strong>CoproResa</strong>. Document actualisé en juillet 2026 avec les nouveaux matériels désormais supportés et un point de vigilance sur le local fibre.</p>
+
+  <div class="advisory" style="margin-bottom: 32px;">
+    <div class="advisory-label">Contexte Harmony</div>
+    <p><strong>Fenêtre d'action.</strong> La mise en conformité des bâtiments Harmony est prévue pour <strong>septembre 2026</strong>, avec l'AG dans la foulée. Tant que le promoteur n'a pas arrêté ses choix matériels, il est plus simple d'obtenir qu'il pose des équipements compatibles avec la plateforme déjà déployée sur l'ASL — si le contrôle d'accès était prévu au programme, il vous le doit.</p>
+    <p><strong>Plateforme unifiée.</strong> Harmony faisant partie de l'ASL, les espaces propres à Harmony viendraient simplement s'ajouter aux espaces de l'ASL sur la même instance CoproResa : <strong>un seul compte habitant, un seul outil</strong>. Tristan (cmdAI) reste disponible pour rencontrer le CS d'Harmony en amont de la mise en conformité.</p>
+  </div>
 
   <!-- CONTEXT STRIP -->
   <div class="context">
@@ -647,37 +653,41 @@
   <section class="sec">
     <div class="sec-head">
       <div class="sec-num">§ 01</div>
-      <h2 class="sec-title">Matériel <em>par porte</em> — trois options</h2>
+      <h2 class="sec-title">Matériel <em>par porte</em> — trois familles compatibles</h2>
     </div>
-    <p class="sec-lede">Une seule des trois familles est compatible aujourd'hui avec la plateforme cmdAI. Les deux autres sont mentionnées par transparence, elles ne sont pas exploitables à ce jour.</p>
+    <p class="sec-lede">Nouveauté juillet 2026 : CoproResa pilote désormais les trois principales familles du marché. Le choix se fait sur les préférences installateur, le nombre de portes à équiper, et l'écosystème réseau existant.</p>
 
     <div class="options">
 
       <div class="opt recommended">
         <div class="opt-badge">Option retenue</div>
         <div class="opt-letter">A</div>
-        <div class="opt-name">Keypad Axis + Contrôleur</div>
-        <div class="opt-models">AXIS A4120-E + AXIS A1210</div>
-        <div class="opt-desc">Architecture classique : keypad AXIS A4120-E en façade, contrôleur A1210 dans la gaine technique, dialogue en <strong>OSDP sécurisé</strong>. Entièrement supportée par la plateforme cmdAI.</div>
-        <div class="opt-status ok">Compatible plateforme</div>
+        <div class="opt-name">AXIS — keypad + contrôleur</div>
+        <div class="opt-models">A4120-E + A1210 (1 porte) ou A1610 (2 portes)</div>
+        <div class="opt-desc">Architecture classique : keypad AXIS A4120-E en façade, contrôleur <strong>A1210</strong> (1 porte) ou <strong>A1610</strong> (2 portes) dans la gaine technique, dialogue en <strong>OSDP sécurisé</strong>. Installateur recommandé : <strong>Integral Système à Bron</strong> (conseillé par AXIS). L'ancien A1001 n'est plus commercialisé.</div>
+        <div class="opt-status ok">Compatible CoproResa</div>
       </div>
 
       <div class="opt">
         <div class="opt-letter">B</div>
-        <div class="opt-name">2N intégré</div>
-        <div class="opt-models">2N — clavier + contrôleur dans un même bloc</div>
-        <div class="opt-desc">Solution tout-en-un (clavier et contrôleur fusionnés). Posée plus simplement mais l'intégration côté plateforme cmdAI n'est pas encore disponible.</div>
-        <div class="opt-status ko">Pas encore compatible</div>
+        <div class="opt-name">2N Access Unit 2.0</div>
+        <div class="opt-models">Digicode + contrôleur intégrés</div>
+        <div class="opt-desc"><strong>Nouveauté supportée (juillet 2026).</strong> Solution tout-en-un : le digicode et le contrôleur sont réunis dans un seul boîtier — pas besoin de gaine technique pour le contrôleur, pose simplifiée par rapport à l'architecture AXIS en deux modules.</div>
+        <div class="opt-status ok">Compatible CoproResa</div>
       </div>
 
       <div class="opt">
         <div class="opt-letter">C</div>
-        <div class="opt-name">Unifi Access</div>
-        <div class="opt-models">UNIFI — gamme Access</div>
-        <div class="opt-desc">Écosystème Ubiquiti / Unifi. D'autres solutions existent dans cette famille. Non prise en charge par la plateforme cmdAI pour le moment.</div>
-        <div class="opt-status ko">Pas encore compatible</div>
+        <div class="opt-name">UniFi Door Access</div>
+        <div class="opt-models">Ubiquiti + Cloud Gateway Max requis</div>
+        <div class="opt-desc"><strong>Nouveauté supportée (juillet 2026).</strong> Écosystème Ubiquiti. Nécessite une <strong>Cloud Gateway Max</strong> — installée par défaut dans les copros gérées par cmdAI pour conserver la visibilité réseau à distance.</div>
+        <div class="opt-status ok">Compatible CoproResa</div>
       </div>
 
+    </div>
+
+    <div class="callout" style="margin-top: 22px;">
+      <strong>À valider avec le promoteur.</strong> Le mieux est d'imposer une des trois familles ci-dessus dans son cahier des charges avant qu'il arrête ses choix. Toute autre famille (Nedap, Vachette connecté, marques hôtelières, etc.) obligerait à un développement d'intégration côté CoproResa — délai et coût non garantis.
     </div>
   </section>
 
@@ -685,9 +695,15 @@
   <section class="sec">
     <div class="sec-head">
       <div class="sec-num">§ 02</div>
-      <h2 class="sec-title">Connectivité <em>Internet</em> — deux voies</h2>
+      <h2 class="sec-title">Connectivité <em>Internet</em> — la fibre mutualisée</h2>
     </div>
-    <p class="sec-lede">Chaque contrôleur doit être joignable depuis Internet pour que la plateforme cmdAI puisse pousser les codes à distance. Le choix se fait entre une fibre mutualisée et une 4G dédiée.</p>
+    <p class="sec-lede">Chaque contrôleur doit être joignable depuis Internet pour que CoproResa puisse pousser les codes à distance. Deux voies existent, mais depuis juillet 2026 la <strong>recommandation ferme</strong> de cmdAI est la fibre mutualisée dans un local technique dédié.</p>
+
+    <div class="advisory">
+      <div class="advisory-label">Conseil fort — anticiper la fibre</div>
+      <p><strong>Faites poser une fibre dans un placard technique fermant à clé.</strong> Il est aujourd'hui rare qu'une résidence n'ait pas besoin d'Internet : salle commune, télérelevés, contrôle d'accès, etc. Une fibre mutualisée coûtera <strong>bien moins cher</strong> que les abonnements 4G que chaque prestataire vous facturera dans son propre modem industriel. À demander <strong>au promoteur avant qu'il arrête ses choix</strong>.</p>
+      <p><strong>Pourquoi c'est structurant.</strong> CoproResa a besoin d'envoyer les codes d'accès aux contrôleurs depuis Internet — sans réseau mutualisé, chaque porte devient un abonnement 4G distinct avec son SIM à gérer.</p>
+    </div>
 
     <div class="compare">
 
@@ -721,11 +737,42 @@
         </ul>
         <div class="price-tag">≈ 25 € / forfait / mois</div>
         <div class="callout" style="margin-top:14px;">
-          <strong>Équivalence prix.</strong> Le coût d'une connexion fibre Orange Pro avec IP dédiée est <em>du même ordre</em> que deux forfaits Matooma — l'arbitrage se fait sur la simplicité d'installation, pas sur le budget.
+          <strong>Équivalence prix — dès 2 portes.</strong> Le coût d'une fibre Orange Pro avec IP dédiée équivaut déjà à deux forfaits Matooma. Au-delà (salle commune, télérelevés, autres prestataires), la fibre mutualisée devient nettement plus économique.
         </div>
       </div>
 
     </div>
+
+    <!-- 2.1 Accès au local fibre -->
+    <h3 class="sub-h"><span class="num">2.1</span>Bonus — <em>gérer l'accès au local fibre</em> avec CoproResa</h3>
+    <p class="sub-lede">Le local technique fibre lui-même peut être piloté par CoproResa. Ce cas d'usage est en train d'être déployé sur la copropriété de Tristan : le syndic a déménagé loin, la gestion des clés (remise, caution, trajets, techniciens débranchant à tort) était devenue ingérable.</p>
+
+    <table class="recap">
+      <thead>
+        <tr>
+          <th style="width:32%;">Sujet</th>
+          <th>Fonctionnement</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><strong>Réservation créneau</strong></td>
+          <td>Technicien ou habitant réserve son créneau en ligne. L'accès à ce local ne pouvant pas être facturé, la réservation reste <strong>gratuite</strong>.</td>
+        </tr>
+        <tr>
+          <td><strong>Code à usage limité</strong></td>
+          <td>Un code personnel ouvre le local uniquement sur le créneau réservé. Plus aucune clé physique à confier ni à récupérer.</td>
+        </tr>
+        <tr>
+          <td><strong>Traçabilité</strong></td>
+          <td>Chaque accès est horodaté et associé à un nom. En cas d'incident (débranchement, dégradation), l'historique lève l'anonymat.</td>
+        </tr>
+        <tr>
+          <td><strong>Matériel</strong></td>
+          <td>Une seule porte à équiper avec l'une des trois familles § 01. À chiffrer en même temps que les portes des espaces communs pour mutualiser l'intervention CFA.</td>
+        </tr>
+      </tbody>
+    </table>
   </section>
 
   <!-- SECTION 3 — SCÉNARIOS COMPLETS -->
@@ -909,7 +956,7 @@
       <div class="sec-num">§ 04</div>
       <h2 class="sec-title">Précisions techniques <em>pour le CFA</em></h2>
     </div>
-    <p class="sec-lede">Détails à transmettre à l'électricien courant faible pour le devis et la pose. Le client peut sauter cette section.</p>
+    <p class="sec-lede">Détails à transmettre à l'électricien courant faible pour le devis et la pose. <strong>Section spécifique à l'option A (AXIS)</strong> — si le choix se porte sur le 2N Access Unit 2.0 (option B) ou UniFi Door Access (option C), les contraintes de câblage et d'alimentation sont différentes et à préciser directement avec l'installateur retenu. Le client peut sauter cette section.</p>
 
     <!-- 4.1 OSDP vs Wiegand -->
     <h3 style="font-family:'Instrument Serif',serif;font-weight:400;font-size:24px;margin:24px 0 12px;color:var(--ink);">
@@ -1211,58 +1258,64 @@
       </thead>
       <tbody>
         <tr>
-          <td><strong>Lecteur (keypad)</strong></td>
-          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">AXIS A4120-E</code></td>
-          <td>Clavier en façade de porte, dialogue OSDP sécurisé avec le contrôleur.</td>
+          <td><strong>Contrôle d'accès — option A</strong></td>
+          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">AXIS A4120-E + A1210 / A1610</code></td>
+          <td>Keypad OSDP en façade + contrôleur 1 ou 2 portes en gaine technique. Installateur conseillé : Integral Système (Bron).</td>
           <td>Électricien CFA</td>
         </tr>
         <tr>
-          <td><strong>Contrôleur</strong></td>
-          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">AXIS A1210</code></td>
-          <td>Pilote la gâche, dialogue avec cmdAI. Un par porte. Alimentation PoE+ 802.3at ou 12 V CC.</td>
+          <td><strong>Contrôle d'accès — option B</strong></td>
+          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">2N Access Unit 2.0</code></td>
+          <td>Digicode + contrôleur intégrés — pose simplifiée, un seul boîtier par porte.</td>
+          <td>Électricien CFA</td>
+        </tr>
+        <tr>
+          <td><strong>Contrôle d'accès — option C</strong></td>
+          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">UniFi Door Access</code></td>
+          <td>Écosystème Ubiquiti — nécessite la Cloud Gateway Max en cœur de réseau.</td>
           <td>Électricien CFA</td>
         </tr>
         <tr>
           <td><strong>Routeur</strong></td>
           <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Unifi Cloud Gateway Max</code></td>
-          <td>Cœur du réseau local, permet la visibilité distante par cmdAI.</td>
+          <td>Cœur du réseau local, permet la visibilité distante par cmdAI. Obligatoire avec UniFi Door Access.</td>
           <td>Électricien CFA</td>
         </tr>
         <tr>
-          <td><strong>Switch PoE</strong> <span style="color:var(--ink-muted);font-size:11.5px;">(optionnel)</span></td>
+          <td><strong>Switch PoE</strong> <span style="color:var(--ink-muted);font-size:11.5px;">(optionnel — option A)</span></td>
           <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Unifi Lite 8 PoE</code></td>
-          <td>Uniquement si les contrôleurs ne peuvent pas être alimentés en 230 V, ou si la distance dépasse 100 m.</td>
+          <td>Uniquement si les contrôleurs AXIS ne peuvent pas être alimentés en 230 V, ou si la distance dépasse 100 m.</td>
           <td>Électricien CFA</td>
         </tr>
         <tr>
-          <td><strong>Connectivité</strong></td>
-          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Orange Pro</code> ou <code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Matooma 4G</code></td>
-          <td>Fibre avec IP fixe dédiée, ou modem 4G IP publique fixe Europe.</td>
+          <td><strong>Connectivité</strong> <span style="color:var(--ink-muted);font-size:11.5px;">(recommandée : fibre)</span></td>
+          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Fibre mutualisée</code> ou <code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">Matooma 4G</code></td>
+          <td>Fibre à poser dans un placard technique fermant à clé. IP fixe requise dans les deux cas.</td>
           <td class="cost">~ 25 €/mois (Matooma)</td>
         </tr>
         <tr>
           <td><strong>Plateforme</strong></td>
-          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">cmdAI</code></td>
-          <td>Programmation des codes à distance, gestion des accès, supervision.</td>
+          <td><code style="font-family:'JetBrains Mono',monospace;font-size:12px;color:var(--accent-deep);">CoproResa (cmdAI)</code></td>
+          <td>Programmation des codes à distance, gestion des accès, supervision. Instance unique partagée ASL + Harmony.</td>
           <td>cmdAI</td>
         </tr>
       </tbody>
     </table>
 
     <div class="callout" style="margin-top:30px;">
-      <strong>Prochaine étape.</strong> Transmettre ce document à l'électricien courant faible / contrôle d'accès pour qu'il établisse un devis. Le choix Scénario A / Scénario B sera tranché à ce moment-là, selon la présence ou non de 230 V à proximité des portes.
+      <strong>Prochaine étape.</strong> Transmettre ce document au CS d'Harmony et à l'électricien courant faible pour cadrer le devis. Le choix entre les options A / B / C se tranche avec l'installateur, en fonction de la présence de 230 V à proximité des portes, du nombre de portes à équiper, et de la préférence entre architecture séparée (AXIS) ou tout-en-un (2N / UniFi). Tristan reste disponible pour une réunion avec le CS avant les arbitrages du promoteur.
     </div>
   </section>
 
   <!-- FOOTER -->
   <div class="foot">
     <div>
-      cmdAI · note technique · R1<br/>
-      à transmettre au CFA / promoteur
+      cmdAI · CoproResa · note technique · R2 — juillet 2026<br/>
+      à transmettre au CS Harmony, au promoteur et au CFA
     </div>
     <div class="sig">
       Tristan Bessoussa
-      <small>cmdAI.fr</small>
+      <small>cmdAI.fr — 06 25 58 22 25</small>
     </div>
   </div>
 
